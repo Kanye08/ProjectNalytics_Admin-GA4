@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "project-nalytics",
+  "private_key_id": "c371a2ca5eedf3906c8d1d1478ab661f875aa98e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCK7Aqbfvt+vQPY\nz/Qx3AQd19GER3wUD1a2JgEdLNLg3AoAZdxeFh7sIA6j+2CGLYjBucMKFuvyipmB\nm3yxXtI8fdUHwSvPit2lND0fEOcNY4Jo22gh3XdvxtyKpCCamfiDfqMPLhgWjZak\nw69y+bzaC2+Yvprpwwe4u3hml3IxgVtes1MUEWqGY+iS6+LqPQuTEy7cUw3z3Vv4\nl6mPTwB1m5RB0Hfc0j4HpluPxMIQOguNX/zDvPwa8wu7duOX3WIZp2+DitjNA9+6\nMhvGUsCvno3K0s44Ul+UqLMcuPRWETP8Z1MN8qd2rYkje5eLy/oSQOkJY02BQJMs\nAyxAtktfAgMBAAECggEAJltb5mkeKXUozcFFLEsSO+ct6zcNlEBT8cD2h8arhvha\nLpfxS20SJqIHSNGMah/CZbLTnkKL7RDFp5p1yEdlBty7aAO3A/vUjNuqkJxLH1A9\nXpRN4SPT6WHf3MvKUMV4b14UyYkxj3CSinWZSMaZlR6ZNnRSM37s792bNcBVAEPN\n8ObyTy+TaV32jW9xECAgaRjdDCS4OgQHfEVx7RE69Ku+BX8JNVGJ6zlPIBFZ+BnH\nkMiI6BG5NcREJI2DHptsHmava0xv1HwKuE9HXaHGD8a4trZ6BFs/wcMV7X3+M/6t\nA31rXuclvQlBUh1BF20QjKWrBTJ5UlKwRWKiMBjBcQKBgQDDcX7g5WkErOGMXVSs\n7bTRwHVvytqApii+LuGq4HFWhW58OAfEGx7MptRc92ULkbseH+F4CV2xFReZTYiq\nHbwiDZ49c2Q2Gx1hLyKZax12B1qRpCey/s+hSAjA0XWRFO+HAkcEwjzAobwtc1FX\nroaqLKaqw5I6ZzZr4bIw868f2QKBgQC190stm3CiRlARGCZSDBPeaYY3iNnsoi1N\nU5gOS3LkU5hkr7EJmVdwH1eZXTdZcHNqgy5Vouu7XJbRiCafDgjvNdvejOC3bBWA\n9RxU2+gQgMhmLkqNmIk8SHtWRD9GbAAW2uHcSknZBW0zZ6L0GDUOkUtN+nlWmkJB\nGCojdJl59wKBgATDNkFKtdVsVQ6zk4WnQTm/Q91Whx6Nbf68a7lbQMfH9ppGT0Ij\nGwwHoLMnQCoZAgNI6ZigOc0/41RUBFmI4fW+eTWsIywCWyPsHx638n7WzQkxg9oj\nxXF7rOLt97xyUyfqEUr3ZL2Y81n0Lm5BjXyGHAWbQGv16eiVFl+FAKZ5AoGAbiac\no6cMr67QmQh9af1VqbVHQibdhJlHwx9vVHfnvL+96HVSPfVNMNpINNZwwvuHYlq2\nmbBd8rVBtuUsO+xLDEMWLcop3d7XxZCa7eOQvyy2IuSyzLQhnxRhVP9LLl4CT9OA\nFdICkhTu3cdGpWxh8ceSRknxWbNXmAAAwiW7IlECgYBTKD79KHwDz/fs8qtD6n3R\ncr3c/PcfH7NuVP5HZ1kEf4lceRBmbWbItNRaM1n2yWIwmecg+iCFbk7B993gAwVI\n967msgpdmswAEnrA4uairnpGVZmUlS38yNyWaZo5nACVOZ6CmETG2/SmChpk4tFI\nzl1vJCZkESd7sPMVcGZr+Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "projectnalytics@project-nalytics.iam.gserviceaccount.com",
+  "client_id": "102328999415428634572",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/projectnalytics%40project-nalytics.iam.gserviceaccount.com"
+}

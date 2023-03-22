@@ -7,11 +7,9 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#"
-                onclick="openExternalPage('https://analytics.google.com/analytics/web/#/p356508490/reports/reportinghub?params=_u..nav%3Dmaui&collectionId=user');"
-                aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="#" onclick="openExternalPage('https://console.cloud.google.com/apis/dashboard?project=project-nalytics');" aria-expanded="false" aria-controls="ui-basic">
                 <i class="mdi mdi-chart-pie menu-icon"></i>
-                <span class="menu-title">Analytics</span>
+                <span class="menu-title"> Google Analytics</span>
 
             </a>
         </li>
@@ -19,7 +17,7 @@
         <li class="nav-item">
             <a class="nav-link" href="{{url('admin/users')}}">
                 <i class="mdi mdi-grid-large menu-icon"></i>
-                <span class="menu-title">Manage Users</span>
+                <span class="menu-title">Subscribers</span>
             </a>
         </li>
         <li class="nav-item">

@@ -5,14 +5,40 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Hash;
 
 
 class UserController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $users = User::paginate(10);
+        // $todayDate = Carbon::now()->format('Y-m-d');
+        // $users = User::when($request->date != null, function ($q) use ($request) {
+        //     if ($request->status == 'Admin') {
+        //         return $q->where('role_as', 1);
+        //     } elseif ($request->status == 'User') {
+        //         return $q->where('role_as', 0);
+        //     } else {
+        //         return $q;
+        //     }
+        // })->paginate(10);
+
+        // return view('admin.users.index', compact('users'));
+        $users = User::query();
+
+        if ($request->date != null) {
+            $users->whereDate('created_at', '=', $request->date);
+        }
+
+        if ($request->status == 'Admin') {
+            $users->where('role_as', 1);
+        } elseif ($request->status == 'User') {
+            $users->where('role_as', 0);
+        }
+
+        $users = $users->paginate(10);
+
         return view('admin.users.index', compact('users'));
     }
 
@@ -73,5 +99,16 @@ class UserController extends Controller
         $user->delete();
         return redirect('admin/users')->with('message', 'User Deleted Successfully!');
     }
-}
 
+
+
+    public function searchUsers(Request $request)
+    {
+        $search = $request->input('query');
+        $users = User::where('name', 'like', '%' . $search . '%')
+            ->orWhere('email', 'like', '%' . $search . '%')
+            ->paginate(10);
+
+        return view('admin.users.search', compact('users'));
+    }
+}

@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
+
+
 @section('content')
 <div class="container p-5">
     <div class="row justify-content-center p-5">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="card">
-                <div class="card-header text-center font-lg bg-primary">ELINT-X Admin {{ __('Login') }}</div>
+                <div class="card-header text-center font-lg">ELINT-X Admin {{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -62,6 +64,11 @@
                                     {{ __('Forgot Your Password?') }}
                                 </a>
                                 @endif
+                                <a href="{{route('otp.login')}}" class="btn btn-link">
+
+                                    {{ __('Login With OTP') }}
+
+                                </a>
                             </div>
                         </div>
                     </form>

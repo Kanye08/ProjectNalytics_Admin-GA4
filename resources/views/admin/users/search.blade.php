@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 
-@section('title','Subscriber List')
+@section('title','Users')
 
 @section('content')
 
@@ -24,9 +24,9 @@
             <hr>
             <div class="card-header">
 
-                <h3>Subscribers
-                    <a href="{{url('admin/users/create')}}" class="btn btn-primary float-end">
-                        Add New User
+                <h3>Users
+                    <a href="{{url('admin/users')}}" class="btn btn-primary float-end">
+                        Back
                     </a>
                 </h3>
                 <!-- filter -->
@@ -39,9 +39,9 @@
                         </div>
 
                         <div class="col-md-3">
-                            <label for="">Filter by Role</label>
+                            <label for="">Filter by Status</label>
                             <select name="status" class="form-select">
-                                <option value="">Select All Roles</option>
+                                <option value="">Select All Status</option>
                                 <option value="Admin" {{Request::get('role_as') == '1' ? 'selected' : ''}}>
                                     Admin
                                 </option>
@@ -66,7 +66,6 @@
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>Account Creation Date</th>
                                 <th>Role</th>
                                 <th>Action</th>
                             </tr>
@@ -74,10 +73,9 @@
                         <tbody>
                             @forelse($users as $user)
                             <tr>
-                                <td>{{$loop->iteration}}</td>
+                                <td>{{$user->id}}</td>
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->email}}</td>
-                                <td>{{$user->created_at}}</td>
                                 <td>
                                     @if($user->role_as == '0')
                                     <label for="" class="badge btn-primary">User</label>

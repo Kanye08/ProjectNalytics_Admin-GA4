@@ -26,8 +26,8 @@
                  </tr>
                  <tr>
                      <th>ID</th>
-                     <th>File Name</th>
-                     <th>File Path</th>
+                     <th>Day</th>
+                     <th>Users</th>
                      <th>Download Time</th>
                  </tr>
                  @foreach($googles as $google)
